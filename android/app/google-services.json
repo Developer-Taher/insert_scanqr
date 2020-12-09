@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "491870066530",
+    "project_id": "itemqr",
+    "storage_bucket": "itemqr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491870066530:android:3d968e2324619ee01b3e3b",
+        "android_client_info": {
+          "package_name": "com.example.geratefluttergooglesheet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "491870066530-klrrsfm6hn8933ehqcha5fcqevhm59dp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDI1M1w9kpl3Q7IGaiMd2xrCMpq1UwGnBc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "491870066530-klrrsfm6hn8933ehqcha5fcqevhm59dp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

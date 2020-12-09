@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
 
-import 'main.dart';
+import 'AddingGoods.dart';
+import 'controller/animation.dart';
+
+
+// import 'main.dart';
 
 // ignore: camel_case_types
 class Qr_Scanner extends StatefulWidget {
@@ -12,7 +16,6 @@ class Qr_Scanner extends StatefulWidget {
 // ignore: camel_case_types
 class _Qr_ScannerState extends State<Qr_Scanner> {
   GlobalKey qrkey = GlobalKey();
-
 
   var qrtext = " ";
   QRViewController controller;
@@ -51,11 +54,14 @@ class _Qr_ScannerState extends State<Qr_Scanner> {
                 child: RaisedButton(
                   child: Text("insert item"),
                   onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) {
-                      return MyApp();
-                    }));
-                  },
+                  Navigator.of(context).push(SliderRight(page: AddingGoods()));
+                },
+                  // onPressed: () {
+                  //   Navigator.push(context,
+                  //       MaterialPageRoute(builder: (context) {
+                  //     return AddGoogleSheet();
+                  //   }));
+                  // },
                 ),
                 // child: Center(
                 //   child: Text("complite data item"),

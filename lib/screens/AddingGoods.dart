@@ -16,14 +16,11 @@ class AddingGoods extends StatefulWidget {
 // need to pass the count list to another
 class _AddingGoodsState extends State<AddingGoods> {
   GeneralController controller = Get.put(GeneralController());
-  // var _goodsweight;
-  // var _netweight;
-  // double _count = 0;
+
   var sumwieght = 0.0;
   var sumnet = 0.0;
   var sumcount = 0.0;
 
-  // List x = ltemscounttlist;
   getweight() {
     for (var i = 0; i < controller.ltemsweightlist.length; i++) {
       sumwieght = sumwieght + controller.ltemsweightlist[i];
@@ -58,6 +55,8 @@ class _AddingGoodsState extends State<AddingGoods> {
         controller.ltemsweightlist.clear();
         controller.ltemsnetweightlist.clear();
         controller.ltemscounttlist.clear();
+        Navigator.pop(context);
+        return null;
       },
       child: Scaffold(
         backgroundColor: mainnebucolor,
@@ -216,7 +215,7 @@ class _AddingGoodsState extends State<AddingGoods> {
                               // print(ltemscounttlist);
                               // print(getCount());
                               // getCount();
-//                            print(_count.toString());
+                              //  print(_count.toString());
                               // ltemsweightlist.add(wieght as int);
                               // getwieght = goodsweightcontroller.text;
                               setState(() {
@@ -229,27 +228,10 @@ class _AddingGoodsState extends State<AddingGoods> {
                                 controller.ltemscounttlist.add(sumcount);
                                 print(controller.ltemsweightlist);
                                 print(getweight());
-                                print(controller.ltemsnetweightlist);
+                                // print(controller.ltemsnetweightlist);
                                 print(getnet());
-                                print(controller.ltemscounttlist);
+                                // print(controller.ltemscounttlist);
                                 print(getCount());
-                                // goodsweightcontroller.text = null;
-                                // netweightcontroller.text = null;
-                                // getCount();
-                                // getCount() {
-                                //   for (var i = 0;
-                                //       i < ltemscounttlist.length;
-                                //       i++) {
-                                //     sum = sum + ltemscounttlist[i];
-                                //   }
-                                //   return sum;
-                                // }
-                                // for (double i in ltemsweightlist) {
-                                //   print(i);
-                                // }
-//                              print(wieght);
-//                              print(net);
-//                              print(count);
                               });
                             },
                           ),

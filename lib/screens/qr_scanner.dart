@@ -30,20 +30,7 @@ class _Qr_ScannerState extends State<Qr_Scanner> {
             // mainAxisAlignment: MainAxisSize.max,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Expanded(
-                flex: 3,
-                child: QRView(
-                  key: qrkey,
-                  overlay: QrScannerOverlayShape(
-                    borderRadius: 30,
-                    borderColor: Colors.red,
-                    borderLength: 60,
-                    borderWidth: 20,
-                    cutOutSize: 300,
-                  ),
-                  onQRViewCreated: _onQrViewCreated,
-                ),
-              ),
+              callcamscanner(),
               Expanded(
                 flex: 1,
                 child: Center(
@@ -73,6 +60,25 @@ class _Qr_ScannerState extends State<Qr_Scanner> {
         ),
       ),
     );
+  }
+
+  Container callcamscanner() {
+    return Container(
+              child: Expanded(
+                flex: 3,
+                child: QRView(
+                  key: qrkey,
+                  overlay: QrScannerOverlayShape(
+                    borderRadius: 30,
+                    borderColor: Colors.red,
+                    borderLength: 60,
+                    borderWidth: 20,
+                    cutOutSize: 300,
+                  ),
+                  onQRViewCreated: _onQrViewCreated,
+                ),
+              ),
+            );
   }
 
   @override

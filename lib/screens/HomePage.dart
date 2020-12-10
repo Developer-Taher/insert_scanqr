@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-
+import '../controller/animation.dart';
 import 'AddingGoods.dart';
 import 'AddingQR.dart';
 import 'ViewGoods.dart';
-import 'controller/animation.dart';
+
 
 class MyApp extends StatefulWidget {
   @override

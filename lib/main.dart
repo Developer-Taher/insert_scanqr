@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'HomePage.dart';
+import 'package:get/get.dart';
+
+import 'screens/HomePage.dart';
+
 
 // void main() async {
 //   // WidgetsFlutterBinding.ensureInitialized();
@@ -7,7 +10,7 @@ import 'HomePage.dart';
 // }
 void main() {
   runApp(
-    MaterialApp(
+    GetMaterialApp(
       debugShowCheckedModeBanner: false,
       //  title: 'Navigation Basics',
       home: MyApp(),

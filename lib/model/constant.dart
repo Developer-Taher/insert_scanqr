@@ -10,7 +10,7 @@ TextStyle buildTextStyleforaddressexpantiontile() {
 
 TextStyle buildTextStylefortextmain() {
   return TextStyle(
-    color: Colors.white,
+    color: Colors.red,
     fontWeight: FontWeight.bold,
   );
 }

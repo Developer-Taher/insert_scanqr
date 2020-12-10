@@ -1,9 +1,11 @@
 
 import 'package:flutter/material.dart';
-import 'package:geratefluttergooglesheet/qr_scanner.dart';
+import 'package:geratefluttergooglesheet/controller/form_controller.dart';
+import 'package:geratefluttergooglesheet/model/items_form.dart';
 
-import 'controller/form_controller.dart';
-import 'model/items_form.dart';
+import 'qr_scanner.dart';
+
+
 
 class AddGoogleSheet extends StatelessWidget {
   @override

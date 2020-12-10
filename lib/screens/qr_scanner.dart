@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
 
+import '../controller/animation.dart';
 import 'AddingGoods.dart';
-import 'controller/animation.dart';
+
 
 
 // import 'main.dart';

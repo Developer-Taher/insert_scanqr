@@ -8,9 +8,6 @@ import '../model/constant.dart';
 import 'listviewitemsgood.dart';
 import 'qr_scanner.dart';
 
-
-
-
 class AddingGoods extends StatefulWidget {
   @override
   _AddingGoodsState createState() => _AddingGoodsState();
@@ -56,8 +53,13 @@ class _AddingGoodsState extends State<AddingGoods> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
+    return WillPopScope(
+      onWillPop: () async {
+        controller.ltemsweightlist.clear();
+        controller.ltemsnetweightlist.clear();
+        controller.ltemscounttlist.clear();
+      },
+      child: Scaffold(
         backgroundColor: mainnebucolor,
         appBar: AppBar(
           backgroundColor: mainnebucolor,

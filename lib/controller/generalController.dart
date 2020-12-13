@@ -4,8 +4,7 @@ class GeneralController extends GetxController {
   // List countofitemstogenerateqrcode = [];
 
   List ltemscounttlist = [];
-   List ltemsweightlist = [];
+  List ltemsweightlist = [];
   List ltemsnetweightlist = [];
-
-
+  
 }

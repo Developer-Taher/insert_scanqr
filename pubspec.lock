@@ -8,6 +8,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.5.0-nullsafety.1"
+  barcode_scan:
+    dependency: "direct main"
+    description:
+      name: barcode_scan
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "3.0.1"
   boolean_selector:
     dependency: transitive
     description:
@@ -57,6 +64,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.2.0-nullsafety.1"
+  fixnum:
+    dependency: transitive
+    description:
+      name: fixnum
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.10.11"
   flutter:
     dependency: "direct main"
     description: flutter
@@ -116,13 +130,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.9.2"
-  qr_code_scanner:
-    dependency: "direct main"
+  protobuf:
+    dependency: transitive
     description:
-      name: qr_code_scanner
+      name: protobuf
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.0.13"
+    version: "1.1.0"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -186,4 +200,3 @@ packages:
     version: "2.1.0-nullsafety.3"
 sdks:
   dart: ">=2.10.0 <2.11.0"
-  flutter: ">=1.10.0 <2.0.0"

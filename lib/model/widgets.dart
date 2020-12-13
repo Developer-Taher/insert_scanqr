@@ -2,6 +2,119 @@ import 'package:flutter/material.dart';
 
 import 'constant.dart';
 
+class AfterColumnData extends StatelessWidget {
+  const AfterColumnData({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Text(
+          "After",
+          style: buildTextStyleforaddressexpantiontile(),
+        ),
+        Text(
+          "111",
+          style: buildTextStylefortextmain(),
+        ),
+        Text(
+          "212",
+          style: buildTextStylefortextmain(),
+        ),
+        Text(
+          "123",
+          style: buildTextStylefortextmain(),
+        ),
+      ],
+    );
+  }
+}
+
+class BeforeColumnData extends StatelessWidget {
+  const BeforeColumnData({
+    Key key,
+    @required this.lastsumwieght,
+    @required this.lastsumnet,
+    @required this.lastsumcount,
+  }) : super(key: key);
+
+  final double lastsumwieght;
+  final double lastsumnet;
+  final double lastsumcount;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Text(
+          "Before",
+          style: buildTextStyleforaddressexpantiontile(),
+        ),
+        Text(
+          "$lastsumwieght",
+          style: buildTextStylefortextmain(),
+        ),
+        Text(
+          "$lastsumnet",
+          style: buildTextStylefortextmain(),
+        ),
+        Text(
+          "$lastsumcount",
+          style: buildTextStylefortextmain(),
+        ),
+      ],
+    );
+  }
+}
+// Container callcamscanner() {
+//     return Container(
+//               child: Expanded(
+//                 flex: 3,
+//                 child: QRView(
+//                   // key: qrkey,
+//                   overlay: QrScannerOverlayShape(
+//                     borderRadius: 30,
+//                     borderColor: Colors.red,
+//                     borderLength: 60,
+//                     borderWidth: 20,
+//                     cutOutSize: 300,
+//                   ),
+//                   onQRViewCreated: _onQrViewCreated,
+//                   key: null,
+//                 ),
+//               ),
+//             );
+// }
+
+class AddressMainRow extends StatelessWidget {
+  const AddressMainRow({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        Text(
+          "Manfactor",
+          style: buildTextStylefortextmain(),
+        ),
+        Text(
+          "Gold - New",
+          style: buildTextStylefortextmain(),
+        ),
+        Text(
+          "12-12-2020",
+          style: buildTextStylefortextmain(),
+        ),
+      ],
+    );
+  }
+}
+
 class TextFieldForQuantity extends StatelessWidget {
   const TextFieldForQuantity({
     Key key,

@@ -17,8 +17,9 @@ dependencies:
 
 
   cupertino_icons: ^1.0.0
-  qr_code_scanner: ^0.0.13
+  # qr_code_scanner: ^0.0.13
   get: ^3.22.2
+  barcode_scan:
   # cloud_firestore: ^0.14.4
   # firebase_core: ^0.5.3
 

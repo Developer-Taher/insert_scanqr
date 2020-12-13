@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:geratefluttergooglesheet/controller/form_controller.dart';
 import 'package:geratefluttergooglesheet/model/items_form.dart';
 
-import 'qr_scanner.dart';
+// import 'qr_scanner.dart';
 
 
 
@@ -234,10 +234,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   IconButton(
                     // child: ,
                     onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => Qr_Scanner()));
+                      // Navigator.push(
+                      //     context,
+                      //     MaterialPageRoute(
+                      //         builder: (context) => Qr_Scanner()));
                     },
                     icon: Icon(
                       Icons.qr_code_scanner,
